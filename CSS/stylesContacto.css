@@ -1,0 +1,82 @@
+/* ESTILOS PARA EL HEADER */
+
+.inicio {
+    background-color: #FFF8D6;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .inicio h1 {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    font-family: "Lucida Handwriting", sans-serif;
+  }
+  
+  .inicio nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: "Rockwell Extra Bold", sans-serif;
+  }
+  
+  .inicio nav ul li {
+     margin-right: 20px;
+  }
+  
+  .inicio nav ul li a {
+    color: #f56200;
+    text-decoration: none;
+    padding: 10px;
+  }
+
+/* ESTILOS PARA EL MAINS */
+
+  .main{
+    background-color: #F7E1AE;
+    padding: 20px;
+  }
+
+  h2 {
+    margin: 20px auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Calibri", sans-serif;
+  }   
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  textarea {
+    height: 100px;
+  }
+  
+  input[type="submit"] {
+    margin-top: 20px;
+  }
+  
+ /* ESTILOS PARA EL FOOTER */
+  
+  .final {
+    background-color: #617A55;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+  }
+
+  footer {
+    margin-top: 0px;
+    border-top: 3px solid #000;
+    padding-top: 10px;
+  } 
