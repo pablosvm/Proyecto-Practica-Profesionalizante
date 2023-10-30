@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto y Papel Cotillón</title>
+    <link rel="stylesheet" href="CSS/registro.css">
+</head>
+<body>
+    <header class="inicio">
+        <div class="logo">
+            <img src="img/Logo/Logo.mp4" alt="Punto y Papel Cotillón">
+            <div class="nombre-sitio">
+                <h1>Punto y Papel</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="ingresar">
+        <a class="ingresar">Convertite en Cliente</a>
+    </div>
+
+    <main class="container">
+        <div class="formulario">
+            <h2>Tus Datos</h2>
+            <form action="registro.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                <label for="dni">DNI/CUIT:</label>
+                <input type="text" id="dni" name="dni" required>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+                <label for="codigo-postal">Código Postal:</label>
+                <input type="text" id="codigo-postal" name="codigo-postal" required>
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" name="localidad" required>
+                <label for="provincia">Provincia:</label>
+                <input type="text" id="provincia" name="provincia" required>
+        </div>
+
+        <div class="formulario">
+            <h2>Tu Información de Contacto</h2>
+            <form>
+                <label for="telefono">Teléfono: (opcional)</label>
+                <input type="tel" id="telefono" name="telefono">
+                <label for="celular">Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+            </form>
+        </div>
+
+        <div class="formulario">
+            <h2>Datos de Acceso</h2>
+            <form>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+                <button class="boton-registrarse" type="submit">Registrarse</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="final">
+        <div class="redes">
+            <h2>Redes</h2>
+            <a href="https://www.facebook.com/tucuenta" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/tucuenta" target="_blank">
+                <img src="img/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <p>Punto y Papel, Cotillón & Repostería</p>
+            <p>Carril Godoy Cruz 1007, Guaymallen</p>
+            <p>WhatsApp: 261-1234567</p>
+            <p>Email: <a href="mailto:puntoypapel@puntoypapel.com">puntoypapel@puntoypapel.com</a></p>
+        </div>
+
+        <div class="ayuda">
+            <h2>Ayuda</h2>
+            <p><a href="formulario_de_contacto.html">Contáctanos</a></p>
+        </div>
+    </footer>
+</body>
+</html>

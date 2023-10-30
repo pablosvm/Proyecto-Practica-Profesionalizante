@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pedido</title>
+    <link rel="stylesheet" href="CSS/pedidos.css">
+    <script src="JS/carrito.js"></script>
+</head>
+<body>
+
+    <header class="inicio">
+        <div class="logo">
+            <img src="img/Logo/Logo.mp4" alt="Punto y Papel Cotillón">
+            <div class="nombre-sitio">
+                <h1>Punto y Papel</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="ingresar">
+        <a class="ingresar">Su Pedido</a>
+    </div>
+
+    <form action="procesar_pedido.php" method="POST">
+        <h2>Detalles de la Compra</h2>
+        <div>
+            <label for="productos">Productos Seleccionados:</label>
+            <ul id="productos-seleccionados">
+                <!-- Agrega aquí los demás productos seleccionados desde JavaScript -->
+            </ul>
+        </div>
+
+        <div>
+            <label for="total">Total de la Compra:</label>
+            <input type="text" id="total" name="total" value="" readonly>
+        </div>
+
+        <h2>Detalles de Envío</h2>
+        <div>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="fecha-entrega">Fecha de Entrega:</label>
+            <input type="date" id="fecha-entrega" name="fecha-entrega" required>
+        </div>
+
+        <div>
+            <label for="nombre-agasajado">Nombre del Agasajado:</label>
+            <input type="text" id="nombre-agasajado" name="nombre-agasajado" required>
+        </div>
+
+        <div>
+            <label for="tipo-entrega">Tipo de Entrega:</label>
+            <input type="radio" id="envio-domicilio" name="tipo-entrega" value="Envío a Domicilio" required>
+            <label for="envio-domicilio">Envío a Domicilio</label>
+            <input type="radio" id="retiro-tienda" name="tipo-entrega" value="Retiro en Tienda" required>
+            <label for="retiro-tienda">Retiro en Tienda</label>
+        </div>
+
+        <div>
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enviar Pedido</button>
+        </div>
+    </form>
+
+    <footer class="final">
+        <div class="redes">
+            <h2>Redes</h2>
+            <a href="https://www.facebook.com/tucuenta" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/tucuenta" target="_blank">
+                <img src="img/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    
+        <div class="contacto">
+            <h2>Contacto</h2>
+            <p>Punto y Papel, Cotillón & Repostería</p>
+            <p>Carril Godoy Cruz 1007, Guaymallen</p>
+            <p>WhatsApp: 261-1234567</p>
+            <p>Email: <a href="mailto:puntoypapel@puntoypapel.com">puntoypapel@puntoypapel.com</a></p>
+        </div>
+    
+        <div class="ayuda">
+            <h2>Ayuda</h2>
+            <p><a href="formulario_de_contacto.html">Contáctanos</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>

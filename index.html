@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punto y Papel Cotillón</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/carrito.js"></script>
 </head>
 <body>
     <header class="inicio">
@@ -19,12 +20,13 @@
     </header>
 
     <div class="botonera">
-        <a class="boton-iniciar-sesion" href="#">INGRESAR</a>
-        <a class="boton-nuevo-usuario" href="#">REGISTRARSE</a>
-        <div class="carrito">
-            <img src="img/carrito.png" alt="Carrito de compras">
-            <span id="gasto-total">Total: $0.00</span>
-        </div>
+        <a class="boton-iniciar-sesion" href="usuarios.html">INGRESAR</a>
+        <a class="boton-nuevo-usuario" href="registro.html">REGISTRARSE</a>
+        <button id="boton-carrito">Comprar</button>
+            <!--<div id="carrito" class="carrito-seleccionado">
+                <img src="img/Iconos/vector-shopping-cart-icon.jpg" alt="Carrito de compras">
+                <span id="gasto-total">Total: $0.00</span>
+            </div>*/-->
     </div>
 
     <main class="container">
@@ -32,21 +34,228 @@
             <div class="fila">
                 <div class="columna">
                     <div class="producto">
-                        <img src="img/amoung.jpg" alt="Cotillon Among Us" class="imagen">
-                        <h4 class="nombre">Cotillon Among Us</h4>
-                        <p class="costo">$10.00</p>
+                        <img src="img/argentina.jpg" alt="Cotillon dbs" class="imagen">
+                        <h4 class="nombre">Seleccion Argentina</h4>
+                        <p class="costo">$350.00</p>
                         <button class="seleccionar">Seleccionar</button>
                     </div>
                 </div>
                 <div class="columna">
                     <div class="producto">
-                        <img src="img/argentina.jpg" alt="Cotillon Seleccion Argentina" class="imagen">
-                        <h4 class="nombre">Cotillon Seleccion Argentina</h4>
-                        <p class="costo">$12.00</p>
+                        <img src="img/river.jpg" alt="Cotillon River" class="imagen">
+                        <h4 class="nombre">River</h4>
+                        <p class="costo">$350.00</p>
                         <button class="seleccionar">Seleccionar</button>
                     </div>
                 </div>
-                <!-- Repite esta estructura para otras imágenes -->
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/boca.jpg" alt="Cotillon Boca" class="imagen">
+                        <h4 class="nombre">Boca</h4>
+                        <p class="costo">$350.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/sony.jpg" alt="Cotillon Sonic" class="imagen">
+                        <h4 class="nombre"><S></S>Sonic</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/spiderman.jpg" alt="Cotillon Spiderman" class="imagen">
+                        <h4 class="nombre">Spiderman</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/capitan_america.jpg" alt="Cotillon Capitan America" class="imagen">
+                        <h4 class="nombre">Capitan America</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/superman.jpg" alt="Cotillon Superman" class="imagen">
+                        <h4 class="nombre">Superman</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/dbs.jpg" alt="Cotillon Dragon Ball Super" class="imagen">
+                        <h4 class="nombre">Dragon Ball Super</h4>
+                        <p class="costo">$290.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/narut.jpg" alt="Cotillon Naruto" class="imagen">
+                        <h4 class="nombre">Naruto</h4>
+                        <p class="costo">$290.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/mario.jpg" alt="Cotillon Mario Bross" class="imagen">
+                        <h4 class="nombre">Mario Bross</h4>
+                        <p class="costo">$350.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/minion.jpg" alt="Cotillon minion" class="imagen">
+                        <h4 class="nombre">Minions</h4>
+                        <p class="costo">$290.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/cars.jpg" alt="Cotillon Cars" class="imagen">
+                        <h4 class="nombre">Cars</h4>
+                        <p class="costo">$250.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/bob_esponja.jpg" alt="Cotillon Bob Esponja" class="imagen">
+                        <h4 class="nombre">Bob Esponja</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/bluey.jpg" alt="Cotillon Bluey" class="imagen">
+                        <h4 class="nombre">Cotillon Bluey</h4>
+                        <p class="costo">$350.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/barbie.png" alt="Cotillon Barbie" class="imagen">
+                        <h4 class="nombre">Barbie</h4>
+                        <p class="costo">$350.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/frozeen.png" alt="Cotillon Frozen" class="imagen">
+                        <h4 class="nombre">Frozen</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/masha_y_el_oso.png" alt="Cotillon Masha y el Oso" class="imagen">
+                        <h4 class="nombre">Masha y el Oso</h4>
+                        <p class="costo">$290.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/unicornio.png" alt="Cotillon Unicornio" class="imagen">
+                        <h4 class="nombre">Unicornio</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/stich.jpg" alt="Cotillon Stich" class="imagen">
+                        <h4 class="nombre">Stich</h4>
+                        <p class="costo">$350.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/firie_fire.jpg" alt="Cotillon Free Fire" class="imagen">
+                        <h4 class="nombre">Free Fire</h4>
+                        <p class="costo">$350.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/fortnite.jpg" alt="Cotillon Fornite" class="imagen">
+                        <h4 class="nombre">Fornite</h4>
+                        <p class="costo">$350.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/planta_zombies.jpg" alt="Cotillon Planta Vs Zombies" class="imagen">
+                        <h4 class="nombre">Plata Vs. Zombie</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/amoung.jpg" alt="Cotillon Among Us" class="imagen">
+                        <h4 class="nombre">Cotillon Among Us</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/maincraf.jpg" alt="Cotillon Maincraft" class="imagen">
+                        <h4 class="nombre">Maincraft</h4>
+                        <p class="costo">$300.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/paw.jpg" alt="Cotillon Paw Patrol" class="imagen">
+                        <h4 class="nombre">Paw patrol</h4>
+                        <p class="costo">$250.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/plin_plin.jpg" alt="Cotillon Plin Plin" class="imagen">
+                        <h4 class="nombre">Plin Plin</h4>
+                        <p class="costo">$2500.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/la_granja_senon.jpg" alt="Cotillon La Granja de Zenon" class="imagen">
+                        <h4 class="nombre">La Granja de Zenon</h4>
+                        <p class="costo">$250.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/tiburon_bebe.jpg" alt="Cotillon Tiburon Bebe" class="imagen">
+                        <h4 class="nombre">Tiburon Bebe</h4>
+                        <p class="costo">$250.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
@@ -75,10 +284,10 @@
     
         <div class="ayuda">
             <h2>AYUDA</h2>
-            <p><a href="formulario_de_contacto.html">Contáctanos</a></p>
+            <p><a href="contacto.html">Contáctanos</a></p>
         </div>
     </footer>
 
-    <script src="carrito.js"></script>
+    <script src="JS/carrito.js"></script>
 </body>
 </html>

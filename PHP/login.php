@@ -1,19 +1,11 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
-</head>
-<body>
-    <h1>Iniciar Sesión</h1>
-    <form action="procesar_login.php" method="POST">
-        <label for="correo">Correo Electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
+<?php
+session_start();
 
-        <label for="contrasena">Contraseña:</label>
-        <input type="password" id="contrasena" name="contrasena" required>
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
-        <input type="submit" value="Ingresar">
-    </form>
-</body>
-</html>
+}
+    $stmt->close();
+    $mysqli->close();
+?>
