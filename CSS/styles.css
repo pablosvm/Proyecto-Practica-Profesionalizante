@@ -1,176 +1,191 @@
-/* 
-.inicio {
-  background-color: #FFF8D6;
-  color: #000000;
-  padding: 20px;
-  text-align: center;
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
 }
 
-.inicio h1 {
-  margin: 0 auto;
-  margin-bottom: 30px;
-  font-family: "Lucida Handwriting", sans-serif;
-}
-
-.inicio nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  font-family: "Rockwell Extra Bold", sans-serif;
-}
-
-.inicio nav ul li {
-  margin-right: 20px;
-}
-
-.inicio nav ul li a {
-  color: #f56200;
+a {
   text-decoration: none;
-  padding: 10px;
 }
 
-/*ESTILOS PARA el Main
-
-.container {
-  background: #F7E1AE;
-  margin: 0;
-  padding: 20px;
+/* Estilos para los botones */
+.boton-comprar,
+.boton-iniciar-sesion,
+.boton-nuevo-usuario,
+.seleccionar,
+button.agregar {
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  text-transform: uppercase;
 }
 
-section {
-  display: flex;
-  justify-content: space-between;
+.boton-comprar,
+.boton-iniciar-sesion,
+.boton-nuevo-usuario {
+  margin: 10px;
+  background-color: #ff6600;
 }
 
-.cuadros {
-  border: 20px solid #F7E1AE;
-  background-color: #A4D0A4;
-  width: 33.33%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+.seleccionar {
+  background-color: #ff6600;
 }
 
-.cuadros p {
-  text-align: left;
-  font-family: "Calibri", sans-serif;
-  margin-bottom: 0px;
-}
-
-h2 {
-  margin: 20px auto;
-  margin-bottom: 30px;
-  text-align: center;
-  font-family: "Calibri", sans-serif;
-  color: #333;
-}
-
-article h3 {
-  color: #333;
-  margin-top: 10px;
-  font-family: "Arial black", sans-serif;
-}
-
-article img {
-  max-width: 50%;
-  margin-top: 10px;
-}
-
-/* Estilo al Footer 
-  
-.final {
-  background-color: #617A55;
-  color: #000000;
-  padding: 20px;
-  text-align: center;
-}
-
-footer {
-  margin-top: 0px;
-  border-top: 3px solid #000;
-  padding-top: 10px;
-}*/
-
-/* ESTILOS PARA EL HEADER */
-.inicio {
-  background-color: #FFD700;
-  color: #000;
-  padding: 20px;
-  text-align: center;
-}
-
-.inicio h1 {
-  font-family: "Lucida Handwriting", sans-serif;
-}
-
-.inicio nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  font-family: "Rockwell Extra Bold", sans-serif;
-}
-
-.inicio nav ul li {
-  margin-right: 20px;
-}
-
-.inicio nav ul li a {
-  color: #f56200;
-  text-decoration: none;
-  padding: 10px;
-}
-
-/* ESTILOS PARA EL CUERPO */
-.container {
-  background: #F7E1AE;
-  margin: 0;
-  padding: 20px;
-}
-
-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.cuadro {
-  border: 20px solid #F7E1AE;
-  background-color: #A4D0A4;
-  width: 33.33%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.cuadro p {
-  font-family: "Calibri", sans-serif;
-  margin-bottom: 0;
-}
-
-h2 {
-  margin: 20px auto;
-  margin-bottom: 30px;
-  text-align: center;
-  color: #333;
-}
-
-/* ESTILOS PARA EL BOTÓN "Agregar al Carrito" */
 button.agregar {
   background-color: #f56200;
-  color: #fff;
-  border: none;
+}
+
+/* Estilos para el encabezado */
+.inicio {
+  position: relative;
+  width: 100%;
+  height: 30vh;
+  overflow: hidden;
+  background-color: #333;
+  color: rgb(49, 46, 46);
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Cambia el ancho del video al 100% */
+  height: 100%;
+  object-fit: cover;
+}
+
+.nombre-sitio {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(44, 42, 42); /* Color del texto */
+  font-family: Arial, sans-serif; /* Cambia la fuente aquí */
+  font-size: 50px; /* Cambia el tamaño de la fuente aquí */
+  font-weight: bold; /* Cambia el peso de la fuente aquí */
+}
+
+.menu-navegacion ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-navegacion li {
+  margin: 0 10px;
+}
+
+.boton-llamada-accion a {
+  background-color: #ff6600;
+}
+
+/* Estilos para la botonera en el encabezado */
+.botonera {
+  background-color: #ff6600;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para los botones de la botonera */
+.boton-comprar,
+.boton-iniciar-sesion,
+.boton-nuevo-usuario {
+  margin: 10px;
   padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; /* Cambia la fuente aquí */
+  font-size: 16px; /* Cambia el tamaño de la letra aquí */
+  font-weight: bold; /* Cambia el peso de la fuente aquí (puede ser normal o bold) */
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+.boton-comprar:hover,
+.boton-iniciar-sesion:hover,
+.boton-nuevo-usuario:hover {
+  background-color: #555; /* Cambia el color al pasar el mouse por encima */
+}
+
+/* Estilos para el carrito y sumador de gastos en el encabezado */
+.carrito {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.carrito img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+#gasto-total {
+  font-weight: bold;
+  font-size: 16px;
+  color: #ff6600;
+}
+
+/* Estilos para el cuerpo */
+.container {
+  padding: 20px;
+}
+
+/* Estilos para la fila de productos */
+.fila {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Estilos para cada columna de producto */
+.columna {
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
+}
+
+/* Estilos para cada producto */
+.producto {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s;
+  background-color: #fffbf0;
+}
+
+.producto:hover {
+  transform: scale(1.05);
+}
+
+.imagen {
+  width: 200px;
+  height: 200px;
+}
+
+.nombre {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.costo {
+  font-weight: bold;
+  color: #ff6600;
+  margin: 5px 0;
+}
+
+/* Estilos para el botón "Agregar al Carrito" */
+button.agregar {
   margin-top: 10px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -180,16 +195,53 @@ button.agregar:hover {
   background-color: #f76c19;
 }
 
-/* ESTILOS PARA EL FOOTER */
+/* Estilos para el footer */
 .final {
-  background-color: #617A55;
-  color: #000;
+  background-color: #ff6600;
+  color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
-footer {
-  margin-top: 0;
-  border-top: 3px solid #000;
-  padding-top: 10px;
+/* Estilos para las secciones del footer */
+.redes, .contacto, .ayuda {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
 }
+
+.redes h2, .contacto h2, .ayuda h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.redes a, .contacto p, .ayuda p {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin: 5px 0;
+}
+
+.redes img {
+  margin: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.ayuda a {
+  text-decoration: underline;
+  color: #333;
+}
+
+/* Estilos para la sección de contacto */
+.contacto {
+  flex: 2;
+  text-align: center;
+  padding: 20px;
+  max-width: 400px;
+}
+
+.contacto h2 {
+  font-size

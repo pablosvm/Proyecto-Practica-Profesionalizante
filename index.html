@@ -8,54 +8,77 @@
 </head>
 <body>
     <header class="inicio">
-        <h1 id="titulo">Punto y Papel Cotillón</h1>
-        <nav>
-            <ul>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="login.php">Ingresar</a></li>
-                <li><a href="registro.php">Nuevo Usuario</a></li>
-            </ul>
-        </nav>
+        <div class="logo">
+            <video width="150" height="150" autoplay loop muted>
+                <source src="img/Logo/Logo.mp4" type="video/mp4">
+            </video>
+            <div class="nombre-sitio">
+                <h1>Punto y Papel</h1>
+            </div>
+        </div>
     </header>
 
+    <div class="botonera">
+        <a class="boton-iniciar-sesion" href="#">Iniciar Sesión</a>
+        <a class="boton-nuevo-usuario" href="#">Nuevo Usuario</a>
+        <div class="carrito">
+            <img src="img/carrito.png" alt="Carrito de compras">
+            <span id="gasto-total">Total: $0.00</span>
+        </div>
+    </div>
+
     <main class="container">
-        <h2>Elegí la temática para decorar tu fiesta</h2>
-        <section>
-            <article class="cuadro">
-                <h3>Mario Bros</h3>
-                <img src="img/Mario.png" alt="Mario Bros">
-                <p>El fontanero más conocido</p>
-                <p>Mario y sus amigos te acompañan con bolsitas de sorpresas, piñatas y mucho más. Adéntrate en el mundo champiñón y descubre todo lo que te ofrece para tu fiesta.</p>
-                <p>Precio: $300</p>
-                <button class="agregar" data-nombre="Mario Bros" data-precio="300">Agregar al Carrito</button>
-            </article>
-            <article class="cuadro">
-                <h3>Spiderman</h3>
-                <img src="img/Frente Spiderman.png" alt="Spiderman">
-                <p>El superhéroe más amigable del barrio</p>
-                <p>El increíble, el sorprendente, el amigable. Busca al Spiderman que más te gusta y anima tu cumpleaños con todo el cotillón temático que tiene para ofrecerte.</p>
-                <p>Precio: $300</p>
-                <button class="agregar" data-nombre="Spiderman" data-precio="100">Agregar al Carrito</button>
-            </article>
-            <article class="cuadro">
-                <h3>Unicornios</h3>
-                <img src="img/Frente Unicornio.png" alt="Unicornios">
-                <p>La dulzura de estos unicornios es mágica</p>
-                <p>Sumérgete en un mundo de fantasía con los unicornios. Disfruta de la magia y el colorido de los unicornios, convierte tu celebración en un verdadero sueño hecho realidad.</p>
-                <p>Precio: $300</p>
-                <button class="agregar" data-nombre="Unicornios" data-precio="100">Agregar al Carrito</button>
-            </article>
-        </section>
+        <div class="imagenes">
+            <div class="fila">
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/amoung.jpg" alt="Cotillon Among Us" class="imagen">
+                        <h4 class="nombre">Cotillon Among Us</h4>
+                        <p class="costo">$10.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="columna">
+                    <div class="producto">
+                        <img src="img/argentina.jpg" alt="Cotillon Seleccion Argentina" class="imagen">
+                        <h4 class="nombre">Cotillon Seleccion Argentina</h4>
+                        <p class="costo">$12.00</p>
+                        <button class="seleccionar">Seleccionar</button>
+                    </div>
+                </div>
+                <!-- Repite esta estructura para otras imágenes -->
+            </div>
+        </div>
     </main>
 
     <footer class="final">
-        <div>
-            <a href="#titulo">Inicio</a>
-            <p>Derechos de autor &copy; 2023 - Punto y Papel Cotillón</p>
-            <p><strong>Pablo Vicencio 1°, 2°</strong></p>
+        <div class="redes">
+            <h2>REDES</h2>
+            <a href="https://www.facebook.com/tucuenta" target="_blank">
+                <img src="img/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/tucuenta" target="_blank">
+                <img src="img/instagram.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/tucuenta" target="_blank">
+                <img src="img/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+    
+        <div class="contacto">
+            <h2>DATOS DE CONTACTO</h2>
+            <p>Punto y Papel, Cotillón & Repostería</p>
+            <p>Carril Godoy Cruz 1007, Guaymallen</p>
+            <p>WhatsApp: 261-1234567</p>
+            <p>Email: <a href="mailto:puntoypapel@puntoypapel.com">puntoypapel@puntoypapel.com</a></p>
+        </div>
+    
+        <div class="ayuda">
+            <h2>AYUDA</h2>
+            <p><a href="formulario_de_contacto.html">Contáctanos</a></p>
         </div>
     </footer>
+
     <script src="carrito.js"></script>
 </body>
 </html>
