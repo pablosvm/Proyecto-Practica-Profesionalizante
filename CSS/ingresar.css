@@ -1,39 +1,159 @@
-/* Estilos para el formulario de ingreso */
-.ingreso {
-    background-color: #f7f7f7; /* Fondo gris claro */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    max-width: 300px; /* Ancho máximo del formulario */
-    margin: 0 auto; /* Centrar el formulario horizontalmente */
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
   }
   
-  .ingreso label {
-    display: block;
-    margin-top: 10px;
+a {
+    text-decoration: none;
+}
+
+.logo video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Cambia el ancho del video al 100% */
+    height: 100%;
+    object-fit: cover;
+}
+
+.nombre-sitio {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(44, 42, 42); /* Color del texto */
+    font-family: Arial, sans-serif; /* Cambia la fuente aquí */
+    font-size: 50px; /* Cambia el tamaño de la fuente aquí */
+    font-weight: bold; /* Cambia el peso de la fuente aquí */
+}
+
+/* Estilos para la botonera en el encabezado */
+.botonera {
+    background-color: #ff6600;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  /* Estilos para los botones de la botonera */
+.ingresar {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif; /* Cambia la fuente aquí */
+  font-size: 16px; /* Cambia el tamaño de la letra aquí */
+  font-weight: bold; /* Cambia el peso de la fuente aquí (puede ser normal o bold) */
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+/* Estilos para el encabezado */
+.inicio {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    overflow: hidden;
+    background-color: #333;
+    color: rgb(49, 46, 46);
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para la sección de "Ya soy cliente" y "Nuevo Cliente" */
+.seccion-inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 400px; /* Ancho máximo de las secciones */
+    margin: 0 auto; /* Centrar horizontalmente las secciones */
+}
+
+.ya-soy-cliente h2,
+.nuevo-cliente h2 {
+    display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  align-items: center; /* Centra los elementos horizontalmente */
+  padding: 20px;
+  max-width: 400px; /* Ancho máximo de las secciones */
+  margin: 0 auto; /* Centrar horizontalmente las secciones */
+}
+
+
+/* Estilos para el botón "Ingresar" y "Registrarse" */
+.boton-ingresar,
+.boton-registrarse {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton-ingresar:hover,
+.boton-registrarse:hover {
+  background-color: #f56200;
+}
+
+/* Estilos para el formulario de ingreso */
+.ingreso {
+    background-color: #fff
+}
+
+/* Estilos para el footer */
+.final {
+    background-color: #ff6600;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Estilos para las secciones del footer */
+  .redes, .contacto, .ayuda {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .redes h2, .contacto h2, .ayuda h2 {
+    font-size: 18px;
     font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .redes a, .contacto p, .ayuda p {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+  }
+  
+  .redes img {
+    margin: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
+  .ayuda a {
+    text-decoration: underline;
     color: #333;
   }
   
-  .ingreso input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  /* Estilos para la sección de contacto */
+  .contacto {
+    flex: 2;
+    text-align: center;
+    padding: 20px;
+    max-width: 400px;
   }
   
-  .ingreso button {
-    background-color: #ff6600;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin-top: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .ingreso button:hover {
-    background-color: #f56200;
-  }
