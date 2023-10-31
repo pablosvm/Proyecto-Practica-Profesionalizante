@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         // Realiza la inserción en la base de datos
         $insertar = "INSERT INTO usuarios (nombre, apellido, dni, direccion, codigo_postal, localidad, provincia, telefono, celular, email, contrasena) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $mysqli->prepare($insertar);
-        $stmt->bind_param("ssisississs", $nombre, $apellido, $dni, $direccion, $codigoPostal, $localidad, $provincia, $telefono, $celular, $email, $contrasena);
+        $stmt->bind_param("", $nombre, $apellido, $dni, $direccion, $codigoPostal, $localidad, $provincia, $telefono, $celular, $email, $contrasena);
         $stmt->execute();
 
         $_SESSION["id"] = $stmt->insert_id;
